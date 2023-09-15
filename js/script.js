@@ -1,9 +1,15 @@
-const word = prompt('inserire una parola')
-const wordReverse = word.split('').reverse().join('');
+const wordUser = prompt('inserire una parola')
 let message;
-if(word === wordReverse){
-    message = 'La parola inserita è palindroma'
+if(palindrome(wordUser) === true){
+    message ='La parola inserita è palindroma'
 }else{
-    message ='La parola inserita non è palindroma'
+    message ='La parola inserita NON è palindroma'
 }
-console.log(message);
+
+
+
+
+function palindrome(word){
+    const wordReverse = word.split('').reverse().join('');
+    return word === wordReverse
+}
