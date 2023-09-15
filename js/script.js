@@ -38,10 +38,13 @@ btnCalc.addEventListener('click', function(){
     document.getElementById('output-odd-even').innerHTML= message
 })
 
+
+// ==============FUNCTIONS=================
+
 // FUNCTION PALINDROME
 function palindrome(word){
     const wordReverse = word.split('').reverse().join('');
-    return word === wordReverse
+    return word === wordReverse;
 }
 // FUNCION RANDOMIZER
 function randomizer(min, max){
