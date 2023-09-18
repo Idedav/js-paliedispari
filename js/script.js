@@ -24,7 +24,7 @@ btnCalc.addEventListener('click', function(){
     let numberOk = true
     const numberPc = randomizer(1,5)
     document.getElementById('output-odd-even').innerHTML= message
-    if(oddEven(summ(numberUser,numberPc)) && oddEvenUser === 'pari'){
+    if(oddEven(summ(numberUser,numberPc)) && oddEvenUser === 'pari' || !oddEven(summ(numberUser,numberPc)) && oddEvenUser === 'dispari'){
         message = 'Hai scelto ' + numberUser + ' e hai scelto ' + oddEvenUser + ' al pc è uscito ' + numberPc + '. La somma dei numeri è ' + summ(numberUser,numberPc) + ' quindi hai vinto!'
     }else{
         message = 'Hai scelto ' + numberUser + ' e hai scelto ' + oddEvenUser + ' al pc è uscito ' + numberPc + '. La somma dei numeri è ' + summ(numberUser,numberPc) + ' quindi hai perso...'
